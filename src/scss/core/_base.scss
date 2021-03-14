@@ -1,42 +1,49 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins';
+	font-weight: 500;
+	overflow: hidden;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 input {
-  background: none;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
 }
 
 textarea {
-  resize: none;
-  background: none;
-  border: none;
-  outline: none;
+	resize: none;
+	background: none;
+	border: none;
+	outline: none;
 }
 
 button {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }

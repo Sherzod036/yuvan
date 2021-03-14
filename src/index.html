@@ -1,20 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOOST</title>
-    <link rel="stylesheet" href="css/bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    @@include('chunks/_header.html')
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Yuvan Landing page</title>
+		<link rel="stylesheet" href="css/bundle.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<section
+				class="background"
+				style="background-image: url('./img/section_1.jpg')"
+			>
+				<div class="content-wrapper section--1">
+					<p class="section__desc section__desc--1">
+						All humans age and die. <br /><br />
+						Most people believe that humans age like cars: Years of wear and
+						tear break us down. And so, most people accept the destruction of
+						aging as inevitable. How could mere science expect to achieve what
+						evolution hasn't achieved in millions of years - a healthy life
+						beyond 100 years?
+					</p>
+					<div class="secondColumn--1">
+						<span class="secondColumn--1__face">
+							<img src="img/face.jpg" alt="" />
+						</span>
+						<div class="secondColum--1__scroll-bar">
+							<figure class="dial">
+								<div class="center"><span>0</span></div>
+								<div class="wrapper">
+									<div class="knob">
+										<div class="handle"></div>
+										<div class="indicator"></div>
+									</div>
+								</div>
+								<canvas class="progress"></canvas>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <main class="main">MAIN</main>
+			<section class="background">
+				<video autoplay loop class="my_video">
+					<source src="img/section_2.mp4" type="video/mp4" />
+				</video>
+				<div class="content-wrapper">
+					<p class="section__desc section__desc--2">
+						However, humans aren't like cars. <br /><br />
+						Rather, we are like leaves in the autumn. We wither and die because
+						that's what we've been programmed to do. <br /><br />
+						All species are programmed to age and die. How else would natural
+						selection occur, if not by the frequent passing of generations?
+					</p>
+				</div>
+			</section>
 
-    @@include('chunks/_footer.html')
+			<section class="background">
+				<video autoplay loop class="my_video">
+					<source src="img/section_3.mp4" type="video/mp4" />
+				</video>
+				<div class="content-wrapper">
+					<p class="section__desc section__desc--3">
+						Every cell in your body carries a digital imprint of your age -
+						small marks on the DNA molecule called methyl groups, telling the
+						cell which part of the program to run.<br /><br />
 
-    <script src="js/bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+						The age imprint is nearly the same in every cell, because cells are
+						coordinated. The communication goes through your bloodstream.<br /><br />
+						What if we could decipher and intercept the communication?<br /><br />
+						Many have tried. We have succeeded.
+					</p>
+				</div>
+			</section>
+
+			<section
+				class="background"
+				style="background-image: url('./img/section_4.jpg')"
+			>
+				<div class="content-wrapper">
+					<p class="section__desc section__desc--4">
+						YUVAN research inc. has rejuvenated rats according to all relevant
+						standards*. We plan to rejuvenate humans within 10 years.<br /><br />
+						Societies will change<br /><br />
+						The world will change<br /><br />
+						Life will change<br /><br />
+
+						<span class="section__subdesc">
+							* The preprint of our study is available here. No other research
+							groups have achieved similar results. Independent labs are
+							currently working to replicate the results.
+						</span>
+					</p>
+				</div>
+			</section>
+
+			<section
+				class="background"
+				style="background-image: url('./img/section_5.jpg')"
+			>
+				<div class="content-wrapper">
+					<div class="inner">
+						<form action="/" class="form">
+							<div class="form__inner">
+								<h2 class="form__title">
+									Most people accept the destruction of aging as inevitable. Do
+									you?
+								</h2>
+								<div class="group">
+									<input type="text" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Name</label>
+								</div>
+
+								<div class="group">
+									<input type="text" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Email</label>
+								</div>
+
+								<div class="group">
+									<input type="text" required />
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Comments</label>
+								</div>
+								<button type="submit" class="form__button">Submit</button>
+							</div>
+						</form>
+						<div class="testimonials">
+							<div class="testimonial">
+								<span class="testimonial__icon">
+									<img src="img/quotes.svg" alt="" />
+								</span>
+
+								<span class="testimonial__pic">
+									<img src="img/professor.png" alt="" />
+								</span>
+								<div class="testimonial__content">
+									<p class="testimonial__desc">
+										What will people do with those extra years they will be
+										given? It is my own belief that man will travel, immortal in
+										the heavens, sail to the distant stars. There are infinite
+										possibilities if you worship life, not death.
+									</p>
+									<div class="testimonial__professy">
+										Harold Katcher, Chief Scientific Officer,
+									</div>
+									<div class="testimonial__univer">
+										Professor at University of Maryland
+									</div>
+								</div>
+							</div>
+							<div class="testimonial">
+								<span class="testimonial__icon">
+									<img src="img/quotes.svg" alt="" />
+								</span>
+
+								<span class="testimonial__pic">
+									<img src="img/professor.png" alt="" />
+								</span>
+								<div class="testimonial__content">
+									<p class="testimonial__desc">
+										What will people do with those extra years they will be
+										given? It is my own belief that man will travel, immortal in
+										the heavens, sail to the distant stars. There are infinite
+										possibilities if you worship life, not death.
+									</p>
+									<div class="testimonial__professy">
+										Harold Katcher, Chief Scientific Officer,
+									</div>
+									<div class="testimonial__univer">
+										Professor at University of Maryland
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+		<script src="js/bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>

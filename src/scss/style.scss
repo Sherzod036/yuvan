@@ -3,7 +3,10 @@
 @import 'core/base';
 @import 'core/libs';
 
-@import 'layout/header';
-@import 'layout/footer';
+@import 'components/scroll-bar';
+
+@import 'layouts/parallax';
+
+@import 'pages/main';
 
 @import 'core/responsive';
