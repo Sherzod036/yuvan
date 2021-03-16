@@ -12,12 +12,12 @@ function clear() {
 	return del('build');
 }
 
-// function bmcss() {
-// 	return src(['node_modules/bootstrap/dist/css/bootstrap-grid.css'])
-// 		.pipe(concat('bundle.min.css'))
-// 		.pipe(csso({ comments: false }))
-// 		.pipe(dest('build/css'));
-// }
+function bmcss() {
+	return src(['node_modules/universal-parallax/dist/universal-parallax.css'])
+		.pipe(concat('bundle.min.css'))
+		.pipe(csso({ comments: false }))
+		.pipe(dest('build/css'));
+}
 
 function style() {
 	return src('src/scss/**/*.scss')
@@ -36,7 +36,10 @@ function style() {
 }
 
 function bmjs() {
-	return src(['node_modules/jquery/dist/jquery.js'])
+	return src([
+		'node_modules/jquery/dist/jquery.js',
+		'node_modules/universal-parallax/dist/universal-parallax.js',
+	])
 		.pipe(concat('bundle.min.js'))
 		.pipe(uglify())
 		.pipe(dest('build/js'));
@@ -82,7 +85,7 @@ function serve() {
 
 exports.default = series(
 	clear,
-	// bmcss,
+	bmcss,
 	style,
 	bmjs,
 	script,
